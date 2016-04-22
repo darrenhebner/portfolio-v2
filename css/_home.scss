@@ -1,0 +1,101 @@
+.home__container {
+	height: calc(100vh - 100px);
+}
+
+.home__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 75%;
+	max-width: 800px;
+	height: 75%;
+	max-height: 400px;
+	transform: translate(-50%, -50%);
+	background: url('../images/hero.png') no-repeat top left;
+	background-size: auto;
+	//border: 10px solid white;
+}
+
+.logo__h, .logo__b, .logo__n, .logo__r {
+	z-index: 10000;
+	position: absolute;
+	transform-origin: 100% 100%;
+}
+
+.logo__h {
+	left: 15%;
+	@media screen and (max-width: 800px) {
+		left: 5%;
+	}
+}
+
+.logo__b {
+	left: 60%;
+	top: 15%;
+}
+
+.logo__n {
+	left: 25%;
+	top: 45%;
+	@media screen and (max-width: 800px) {
+		left: 15%;
+	}
+}
+
+.logo__r {
+	left: 70%;
+	top: 60%;
+}
+
+.home__line {
+	z-index: 1000;
+	position: absolute;
+	width: 50%;
+	height: 14px;
+	left: 40%;
+	top: 10%;
+	background: url('../images/line.svg') no-repeat;
+	@media screen and (max-width: 800px) {
+		left: 30%;
+	}
+	@media screen and (max-width: 500px) {
+		left: 40%;
+	}
+}
+
+.home__diagonal {
+	z-index: 1000;
+	position: absolute;
+	width: 140px;
+	height: 150px;
+	left: 50%;
+	top: 60%;
+	background: url('../images/diagonal.svg') no-repeat;
+	background-size: 100% 100%;
+	@media screen and (max-width: 800px) {
+		left: 45%;
+	}
+	@media screen and (max-width: 650px) {
+		left: 40%;
+	}
+	@media screen and (max-width: 500px) {
+		width: 120px;
+	}
+	@media screen and (max-width: 400px) {
+		display: none;
+	}
+}
+
+.home__circle {
+	display: none;
+	z-index: 10000;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	left: -5%;
+	top: 50%;
+	background: url('../images/circle.svg') no-repeat;
+	@media screen and (max-width: 800px) {
+		left: -20%;
+	}
+}

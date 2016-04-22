@@ -1,0 +1,51 @@
+.logo {
+	display: block;
+	width: 60px;
+	height: auto;
+	margin-right: 30px;
+	margin-left: -90px;
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
+}
+
+ul.main-nav{
+	display: flex;
+	align-items: flex-end;
+	margin: 0 auto;
+	height: 100px;
+	width: 90%;
+	max-width: 960px;
+	@media screen and (min-width: 1500px) {
+		max-width: 1500px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 80px;
+	}
+	li {
+		display: inline-block;
+		padding: 1.6em 1.6em 1.6em 0;
+		@media screen and (max-width: 350px) {
+			padding-right: 1.2em;
+		}
+	}
+}
+
+ul.social-buttons {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(90deg);
+	margin-top: 0;
+	li {
+		margin-top: 0;
+		display: inline-block;
+		margin-right: 1.6em;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
+}
